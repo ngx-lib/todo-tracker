@@ -1,9 +1,22 @@
-<mat-form-field>
+<mat-form-field appearance="fill">
+  <mat-label>Priority</mat-label>
+  <mat-select [(value)]="priority">
+    <mat-option value="high">High</mat-option>
+    <mat-option value="medium">Medium</mat-option>
+    <mat-option value="low">Low</mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-form-field appearance="fill">
   <mat-label>Task</mat-label>
   <input matInput type="text" [(ngModel)]="value" (keyup.enter)="addNew()">
 </mat-form-field>
-<li *ngFor="let task of tasks;" style="width: 200pt;">
-  {{task}}
-    <mat-icon aria-hidden="false" aria-label="" style="float:right">close</mat-icon>
-  
-</li>
+<ul *ngFor="let task of tasks; let i = index" style="width: 200pt;">
+  <mat-checkbox class="example-margin" [(ngModel)]="task['status']" [ngStyle]="{'color':getColor(task['priority'])}"
+    (change)="updateStatus()" [ngClass]="{strike:task['status']===true}">({{task['priority']}})
+    {{task['taskDesc']}}</mat-checkbox>
+</ul>
+<div>
+  <button mat-fab color="primary" aria-label="Example icon button with a delete icon" (click)="clear()">
+    <mat-icon>delete</mat-icon>
+  </button>
+</div>

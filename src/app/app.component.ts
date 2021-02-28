@@ -1,29 +1,67 @@
 import { Component } from '@angular/core';
-
+import { DataService } from './services/data.service';
+interface TaskList {
+  priority: string,
+  taskDesc: string,
+  status: boolean
+}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  value = 'Pay Credit Card Bill';
-  tasks: string[] = [];
+  value = '';
+  tasks: TaskList[] = [];
+  priority: string = 'low';
+
+  constructor(private data: DataService) {
+  }
 
   addNew() {
     if (this.value != '') {
-      this.tasks.push(this.value);
-      console.log(this.tasks);
+      let taskList: TaskList = {
+        priority: this.priority,
+        taskDesc: this.value,
+        status: false
+      };
+      this.tasks.push(taskList);
       this.value = ''
-      localStorage.setItem('tasks', JSON.stringify(this.tasks));
+      this.updateStatus()
+    }
+  }
+
+  getColor(value: string) {
+    switch (value) {
+      case 'low':
+        return 'green';
+      case 'medium':
+        return 'orange';
+      case 'high':
+        return 'red';
+      default:
+        return 'black';
     }
   }
 
   ngOnInit() {
-    let data = JSON.parse(localStorage.getItem('tasks') || '[]');
-    console.log(typeof (data));
-    console.log(data);
-    if (this.tasks.length == 0) {
-      this.tasks = data;
+    this.getTaskList();
+  }
+
+  getTaskList() {
+    this.tasks = [];
+    let tasklist = this.data.get();
+    if (tasklist.length > 0) {
+      this.tasks = tasklist;
     }
+  }
+
+  updateStatus() {
+    this.data.update(this.tasks);
+  }
+
+  clear() {    
+    this.data.clear();
+    this.getTaskList();
   }
 }
