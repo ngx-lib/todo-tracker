@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1614621091764,
-  "index": "/todo-tracker/index.html",
+  "timestamp": 1614621933904,
+  "index": "https://ngx-lib.github.io/todo-tracker/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "/todo-tracker/favicon.ico",
-        "/todo-tracker/index.html",
-        "/todo-tracker/main.f3b4c3869f7af6f9b9a8.js",
-        "/todo-tracker/manifest.webmanifest",
-        "/todo-tracker/polyfills.94daefd414b8355106ab.js",
-        "/todo-tracker/runtime.7b63b9fd40098a2e8207.js",
-        "/todo-tracker/styles.7b24d4c0c7d7e30102d9.css"
+        "https://ngx-lib.github.io/todo-tracker/favicon.ico",
+        "https://ngx-lib.github.io/todo-tracker/index.html",
+        "https://ngx-lib.github.io/todo-tracker/main.f3b4c3869f7af6f9b9a8.js",
+        "https://ngx-lib.github.io/todo-tracker/manifest.webmanifest",
+        "https://ngx-lib.github.io/todo-tracker/polyfills.94daefd414b8355106ab.js",
+        "https://ngx-lib.github.io/todo-tracker/runtime.7b63b9fd40098a2e8207.js",
+        "https://ngx-lib.github.io/todo-tracker/styles.7b24d4c0c7d7e30102d9.css"
       ],
       "patterns": []
     },
@@ -29,35 +29,35 @@
         "ignoreVary": true
       },
       "urls": [
-        "/todo-tracker/assets/icons/icon-128x128.png",
-        "/todo-tracker/assets/icons/icon-144x144.png",
-        "/todo-tracker/assets/icons/icon-152x152.png",
-        "/todo-tracker/assets/icons/icon-192x192.png",
-        "/todo-tracker/assets/icons/icon-384x384.png",
-        "/todo-tracker/assets/icons/icon-512x512.png",
-        "/todo-tracker/assets/icons/icon-72x72.png",
-        "/todo-tracker/assets/icons/icon-96x96.png"
+        "https://ngx-lib.github.io/todo-tracker/assets/icons/icon-128x128.png",
+        "https://ngx-lib.github.io/todo-tracker/assets/icons/icon-144x144.png",
+        "https://ngx-lib.github.io/todo-tracker/assets/icons/icon-152x152.png",
+        "https://ngx-lib.github.io/todo-tracker/assets/icons/icon-192x192.png",
+        "https://ngx-lib.github.io/todo-tracker/assets/icons/icon-384x384.png",
+        "https://ngx-lib.github.io/todo-tracker/assets/icons/icon-512x512.png",
+        "https://ngx-lib.github.io/todo-tracker/assets/icons/icon-72x72.png",
+        "https://ngx-lib.github.io/todo-tracker/assets/icons/icon-96x96.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/todo-tracker/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "/todo-tracker/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "/todo-tracker/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "/todo-tracker/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "/todo-tracker/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/todo-tracker/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/todo-tracker/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "/todo-tracker/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "/todo-tracker/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/todo-tracker/index.html": "ae23b80dc137ccb800ad89cc789493a03451788c",
-    "/todo-tracker/main.f3b4c3869f7af6f9b9a8.js": "82c894821a1efd76719ba694f7e2e285cf7144b8",
-    "/todo-tracker/manifest.webmanifest": "b097167d56ba819a6635c2398852cd07d259df00",
-    "/todo-tracker/polyfills.94daefd414b8355106ab.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
-    "/todo-tracker/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/todo-tracker/styles.7b24d4c0c7d7e30102d9.css": "5b2b0798d739561e95aebab9c19faccad23d76a7"
+    "https://ngx-lib.github.io/todo-tracker/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://ngx-lib.github.io/todo-tracker/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://ngx-lib.github.io/todo-tracker/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://ngx-lib.github.io/todo-tracker/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://ngx-lib.github.io/todo-tracker/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://ngx-lib.github.io/todo-tracker/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://ngx-lib.github.io/todo-tracker/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://ngx-lib.github.io/todo-tracker/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://ngx-lib.github.io/todo-tracker/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://ngx-lib.github.io/todo-tracker/index.html": "ae192b836333cc8e1103493f71d300a2b6f62396",
+    "https://ngx-lib.github.io/todo-tracker/main.f3b4c3869f7af6f9b9a8.js": "82c894821a1efd76719ba694f7e2e285cf7144b8",
+    "https://ngx-lib.github.io/todo-tracker/manifest.webmanifest": "b097167d56ba819a6635c2398852cd07d259df00",
+    "https://ngx-lib.github.io/todo-tracker/polyfills.94daefd414b8355106ab.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
+    "https://ngx-lib.github.io/todo-tracker/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://ngx-lib.github.io/todo-tracker/styles.7b24d4c0c7d7e30102d9.css": "5b2b0798d739561e95aebab9c19faccad23d76a7"
   },
   "navigationUrls": [
     {
