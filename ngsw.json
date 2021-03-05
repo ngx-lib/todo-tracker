@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1614952787633,
+  "timestamp": 1614954716483,
   "index": "https://ngx-lib.github.io/todo-tracker/index.html",
   "assetGroups": [
     {
@@ -15,9 +15,12 @@
         "https://ngx-lib.github.io/todo-tracker/index.html",
         "https://ngx-lib.github.io/todo-tracker/main.f3b4c3869f7af6f9b9a8.js",
         "https://ngx-lib.github.io/todo-tracker/manifest.webmanifest",
+        "https://ngx-lib.github.io/todo-tracker/ngsw-worker.js",
         "https://ngx-lib.github.io/todo-tracker/polyfills.94daefd414b8355106ab.js",
         "https://ngx-lib.github.io/todo-tracker/runtime.7b63b9fd40098a2e8207.js",
-        "https://ngx-lib.github.io/todo-tracker/styles.7b24d4c0c7d7e30102d9.css"
+        "https://ngx-lib.github.io/todo-tracker/safety-worker.js",
+        "https://ngx-lib.github.io/todo-tracker/styles.7b24d4c0c7d7e30102d9.css",
+        "https://ngx-lib.github.io/todo-tracker/worker-basic.min.js"
       ],
       "patterns": []
     },
@@ -55,9 +58,12 @@
     "https://ngx-lib.github.io/todo-tracker/index.html": "ae192b836333cc8e1103493f71d300a2b6f62396",
     "https://ngx-lib.github.io/todo-tracker/main.f3b4c3869f7af6f9b9a8.js": "82c894821a1efd76719ba694f7e2e285cf7144b8",
     "https://ngx-lib.github.io/todo-tracker/manifest.webmanifest": "b097167d56ba819a6635c2398852cd07d259df00",
+    "https://ngx-lib.github.io/todo-tracker/ngsw-worker.js": "b44316be1c1338e9e8bd30ee40946085916c58e4",
     "https://ngx-lib.github.io/todo-tracker/polyfills.94daefd414b8355106ab.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
     "https://ngx-lib.github.io/todo-tracker/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "https://ngx-lib.github.io/todo-tracker/styles.7b24d4c0c7d7e30102d9.css": "5b2b0798d739561e95aebab9c19faccad23d76a7"
+    "https://ngx-lib.github.io/todo-tracker/safety-worker.js": "f532926317210be6e2679d21748dc44a35389807",
+    "https://ngx-lib.github.io/todo-tracker/styles.7b24d4c0c7d7e30102d9.css": "5b2b0798d739561e95aebab9c19faccad23d76a7",
+    "https://ngx-lib.github.io/todo-tracker/worker-basic.min.js": "f532926317210be6e2679d21748dc44a35389807"
   },
   "navigationUrls": [
     {
