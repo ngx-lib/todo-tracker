@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "predeploy":"ng build --prod --base-href=https://ngx-lib.github.io/todo-tracker/",
+    "predeploy":"ng build --prod --base-href=/todo-tracker/",
     "deploy":"gh-pages -d dist/todo-tracker"
   },
   "private": true,

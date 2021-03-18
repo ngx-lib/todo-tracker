@@ -16,7 +16,11 @@
     {{task['taskDesc']}}</mat-checkbox>
 </ul>
 <div>
-  <button mat-fab color="primary" aria-label="Example icon button with a delete icon" (click)="clear()">
+  <button mat-fab color="primary" aria-label="delete" (click)="clear()">
     <mat-icon>delete</mat-icon>
   </button>
+  <button mat-fab color="primary" aria-label="home" (click)="schedule()">
+    <mat-icon>home</mat-icon>
+  </button>
+
 </div>

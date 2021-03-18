@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SwPush } from '@angular/service-worker';
 import { DataService } from './services/data.service';
 interface TaskList {
   priority: string,
@@ -15,8 +16,12 @@ export class AppComponent {
   tasks: TaskList[] = [];
   priority: string = 'low';
 
-  constructor(private data: DataService) {
-  }
+  readonly VAPID_PUBLIC_KEY = "BEyoOxHmtSLqnkOMQN9_YLAMX6suCSpBJWAS0pJJ0AjjzGhYR55HL07e8PBO3ckP4IaPkUN64b3onn_TqaYaj58";
+
+  constructor(
+    private data: DataService,
+    private swPush: SwPush
+  ) { }
 
   addNew() {
     if (this.value != '') {
@@ -46,6 +51,27 @@ export class AppComponent {
 
   ngOnInit() {
     this.getTaskList();
+    this.checkNotificationPermission();
+    this.tasks.forEach(task => {
+      if (!task.status) {
+        this.sendNotification(task.taskDesc, '');
+      }
+    });
+  }
+
+  sendNotification(text: any, img: any) {
+    if (Notification.permission === 'granted') {
+      let notification = new Notification('To do list', { body: text, icon: img });
+      let notification1 = new Notification('To do list', { body: text, icon: img });
+    }
+  }
+
+  checkNotificationPermission() {
+    let promise = null;
+    if (Notification.permission !== 'granted') {
+      promise = Notification.requestPermission();
+    }
+    return promise;
   }
 
   getTaskList() {
@@ -60,8 +86,12 @@ export class AppComponent {
     this.data.update(this.tasks);
   }
 
-  clear() {    
+  clear() {
     this.data.clear();
     this.getTaskList();
+  }
+
+  schedule() {
+    let timer = ['11:59', '12:02']
   }
 }
