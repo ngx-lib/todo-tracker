@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { SwPush } from '@angular/service-worker';
 import { DataService } from './services/data.service';
+import { AngularFireDatabase } from 'angularfire2/database';
+
 interface TaskList {
   priority: string,
   taskDesc: string,
@@ -20,8 +22,23 @@ export class AppComponent {
 
   constructor(
     private data: DataService,
-    private swPush: SwPush
-  ) { }
+    private swPush: SwPush,
+    db: AngularFireDatabase
+  ) {
+    // db.list('/Task').valueChanges().subscribe(tasks => { console.log(tasks); });
+
+    // db.list('/Frequency').valueChanges().subscribe(frequency => { console.log(frequency); });
+
+    // db.database.ref('Task/Task3').set(
+    //   {
+    //     Desc:'Oh Please'
+    //   }
+    // );
+
+  }
+
+  newtasks = []
+
 
   addNew() {
     if (this.value != '') {

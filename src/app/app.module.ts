@@ -12,6 +12,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire';
+import {AngularFireDatabaseModule} from 'angularfire2/database';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     MatSelectModule,
     MatCheckboxModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
